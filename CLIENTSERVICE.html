@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Services</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <!--
+        1. aside의 ul li a태그(ex:PAYMENT) 클릭시 div의 class가(ex:PAYMENT)로 이동하는 구조
+        2. aside의 ul li span태그(expand_more) 클릭시 ul이보여지고 span태그(expand_less)로 변경
+    -->
+</head>
+<body>
+    <header>
+        <div class="logorab">
+            <h1>
+                <a href="index.html"><img src="images/logo.svg" alt="balenciaga"></a>
+            </h1>
+            <div class="subrab">
+                <form>
+                    <fieldset>
+                        <input type="text" id="searchText" placeholder="What art you looking for?">
+                        <input type="submit" value="search">
+                    </fieldset>
+                </form>
+                <a href="Account.html" class="material-icons">person_outline</a>
+                <input type="button" value="cart" data-panelName="cartSidePanel">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>READY TO WEAR
+                    <ul>
+                        <li><a href="CoatsNJackets.html">Coats&amp;Jackets</a></li>
+                        <li><a href="Pants.html">Pants</a></li>
+                        <li><a href="SweatshirtsNHoodies.html">Sweatshirts&Hoodies</a></li>
+                        <li><a href="T-Shirts.html">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>SHOES
+                    <ul>
+                        <li><a href="BootsNDerbies.html">Boots&amp;Derbies</a></li>
+                        <li><a href="Crocs.html">Crocs</a></li>
+                        <li><a href="Sneakers.html">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li>LEATHER GOODS
+                    <ul>
+                        <li><a href="Backpacks.html">Backpacks</a></li>
+                        <li><a href="BagsNTotes.html">Bags&amp;Totes</a></li>
+                    </ul>
+                </li>
+                <li>SMALL GOODS
+                    <ul>
+                        <li><a href="CardHolders.html">CardHolders</a></li>
+                        <li><a href="Wallets.html">Wallets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside id="cartSidePanelEmpty">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <p>You do not have any products in your basket</p>
+            <input type="button" value="CONTINUE SHOPPING">
+        </aside>
+        
+        <aside id="cartSidePanel">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <ul>
+                <li>
+                    <img src="images/Coats&jackets_01.jpg" alt="OversizeTrench">
+                    <dl>
+                        <dt>Oversized Trench</dt>
+                        <dd>size:<span>xxs</span></dd>
+                        <dd><strong>$3,350</strong></dd>
+                        <dd><input type="button" value="Remove"></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="total">
+                Total : <strong>$3,350</strong>
+            </div>
+            <a href="payment.html">PROCEED TO CHECKOUT</a>
+        </aside>
+    </header>
+
+    <section class="clientServiceContainer reposContainer">
+        <h2>Client_Services</h2>
+        <aside>
+            <h3>CATEGORIES</h3>
+            <ul class="reposBtn">
+                <li>
+                    <a href="#" data-tabName="paymentPanel" class="active">PAYMENT</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="deliveryPanel">DELIVERY</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="myAccountPanel">MY ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="#" data-tabName="returnsPanel">RETURNS, REFUNDS, EXCHANGES</a>
+                </li>
+            </ul>
+        </aside>
+        <article class="paymentContainer reposPanel active" id="paymentPanel">
+            <h3 id="payment">PAYMENT</h3>
+            <div>
+                <h4>WHY CAN I COMPLETE MY ORDER ? </h4>
+                <p>
+                    Verify that you have correctly entered the data for your selected method of payment.
+                    If you are paying with a credit card and the problem persists, we suggest contacting your Credit Card Issuer.
+                    If your financial intitution is unable to resolve the matter, you may contact Client Service for further assistance here.
+                </p>
+            </div>
+            <div>
+                <h4>WHY IS THE AMOUNT I PAID DIPPERENT FROM THE AMOUNT OF MY ORDER ?</h4>
+                <p>
+                    The amount paid is lower when, at the moment the order is dispatched, one or more of the articles is not available ;
+                    the charged amount will correspond exclusively to the value of the articles that were effectively shipped.
+                </p>
+            </div>
+            <div>
+                <h4>PAYMENT METHODS</h4>
+                <p>
+                    Balenciaga.com accepts the following payment methods :
+                    Credit Card : Visa, MasterCard, American Express, Discover.
+                    The amount will be charged to your card once the items are shipped.
+                    Balenciaga.com features a Fast Checkout option, allowing you to securely save your credit card details so that you do not have to re-enter
+                    them for future purchases.
+                </p>
+                <p>
+                    PayPal : Shop easily online without having to enter your credit card details on the website.
+                    Your account will be charged once the items are shipped. To register for a PayPal account, visit the website paypal.com. 
+                    Please note PayPal is not offered as payment option for Pre Orders.
+                </p>
+                <p>
+                    Klarna offers 3 flexible payment options with no additional cost, upon your preference :
+                    1) Pay now : Pay the entire amount instantly, either via online banking or direct debit.
+                    2) Pay in 30 days : Payment will be processed once the order has been delivered.
+                    3) Pay in installments: Payment will be processed in 3 or 4 installments.
+                </p>
+                <p>
+                    *Please note Klarna is not offered as payment option for Pre-Orders.	
+                </p>
+            </div>
+            <div>
+                <h4>TAXES</h4>
+                <p>
+                    Sales tax is applied to your order in accordance with individual state and local regulations depending on the shipping address and location of any retail stores,
+                    company establishments or partners, located in that state. An estimated tax charge is added to your order during the check out process,
+                    and the exact charges will be calculated automatically upon shipping your order based on the shipping address Zip Code.
+                    The final amount taxed will be equal or less than the Estimated Sales Tax and will be indicated on your completed order invoice.
+                </p>
+            </div>
+        </article>
+        <article class="deliveryContainer reposPanel" id="deliveryPanel">
+            <h3 id="delivery">DELIVERY</h3>
+            <div>
+                <h4>SHIPPING TIMES AND COSTS</h4>
+                <p>We offer complimentary express shipping. </p>
+                <p>
+                    Orders placed by Dec 16th before 12:30 AM (Midnight 30) will be received before Christmas with complimentary express shipping.
+                    *Please note that the orders must be placed and paid within the specified time period.
+                </p>
+                <p>
+                    You will receive an email with your tracking number once your package has been shipped. For security reasons,
+                    your purchases will require a signature upon delivery. Please check the number of boxes delivered and make sure the package is not damaged in any way.
+                    Any damage to the packaging and/or the product or any discrepancy between the number of boxes delivered should be immediately notified
+                    by indicating in writing on the courier's delivery documents.
+                    Our courier delivers from Monday to Friday during business hours and will make two delivery attempts.
+                    After the second failed attempt, your order will be returned to the sender.  Please note that once you have placed an order,
+                    it is no longer possible to modify your shipping address. 
+                </p>
+                <p>All orders are processed automatically and we are unable to expedite or delay shipping times.</p>
+            </div>
+            <div>
+                <h4>WHERE IS MY ORDER ?</h4>
+                <p>You can find all information related to your order and its delivery status in your Order History.</p>
+                <p>For all orders placed before February, 16th, please contact Client Service</p>
+            </div>
+            <div>
+                <h4>CAN I CHOOSE A DELIVERY DATE/TIME ?</h4>
+                <p>Unfortunately, it is not possible to choose a specific date and time.</p>
+            </div>
+            <div>
+                <h4>WHAT SHOULD I DO IF MY ORDER HAS NOT BEEN DELIVERED YET ?</h4>
+                <p>
+                    If your order has not been delivered within the estimated period, we suggest that you :
+                    - Check the order status in your Order History for registered users 
+                    - Check that the address indicated for the delivery is correct. 
+                    - In the case of a missed delivery please contact  Fedex 
+                    For further assistance, contact us, we will be happy to assist you.
+                </p>
+            </div>
+            <div>
+                <h4>SHIPPING RESTRICTIONS</h4>
+                <p>
+                    At this time we are unable to ship orders to General Delivery, P.O. Boxes. Orders made to any of these addresses will be cancelled.
+                    The delivery address of your order must match the location site in which you place your order.
+                    Orders made from a different location site than the delivery address will be automatically cancelled.
+                    Please select the correct location site for your order from the link in the corner of every page.
+                </p>
+            </div>
+            <div>
+                <h4>HOLYDAYS CALENDAR</h4>
+                <p>
+                    Our warehouse will be closed on : 
+                    -  July, 3rd
+                    -  September 7th
+                    -  November 26th
+                    -  November 27th
+                    -  December 25th
+                </p>
+            </div>
+            <div>
+                <h4>PACKAGING</h4>
+                <p>
+                    All orders will be delivered in our signature Balenciaga packaging that is suitable for gifting.
+                    Orders will be shipped inside a secure and anonymous cardboard box.
+                </p>
+                <p>
+                    All papers and cardboards used for Balenciaga ecom packaging are FSC (Forest Stewardship Council)
+                    certified and contain between 40% and 50% of post-consumer waste fibers.
+                    Our garments bags are made of recycled polyester and our flannels are made of GOTS (Global Organic Textile Standard) certified cotton.
+                    Our stationery is printed on FSC paper with vegetal inks.
+                </p>
+            </div>
+            <div>
+                <h4>WHAT CAN I DO IF MY PACKAGE IS DAMAGED ?</h4>
+                <p>
+                    According to the traffic regulation, you can open a claim for damages with the carrier under certain conditions.
+                    On the day of delivery, you should accept the package with reservations and sign the receipt.
+                    Under the signature, you need to mention the reason, for ex: "damaged package", "crushed box", "open box", "wet box", etc...
+                    You can thereafter proceed to open a claim with the carrier and also attach pictures of the damaged box to support your claim.
+                </p>
+            </div>
+        </article>
+        <article class="myAccountContainer reposPanel" id="myAccountPanel">
+            <h3 id="myaccount">MY ACCOUNT</h3>
+            <div>
+                <h4>I CANNOT LOG INTO MY ACCOUNT. WHAT SHOULD I DO ?</h4>
+                <p>
+                    If you forgot your password, click on the "Forgot your password?" link on the Login page and follow the procedure to change it.
+                    For further assistance, contact us, we will be happy to assist you.
+                </p>
+            </div>
+            <div>
+                <h4>HOW CAN ID DELETE MY ACCOUNT ?</h4>
+                <p>If you want to cancel your Account, please сontact us.</p>
+            </div>
+            <div>
+                <h4>NEWSLETTER</h4>
+                <p>
+                    Subscribe to our Newsletter and you can :
+                    Be among the first to discover the latest news from Balenciaga.com,
+                    Access promotions reserved exclusively for our customers,
+                    Receive our style tips,
+                    …and much more.
+                    You can subscribe from the Home Page, by entering your email address.
+                </p>
+            </div>
+            <div>
+                <h4>HOW CAN I UNSUBSCRIBE FROM YOUR NEWSLETTER ?</h4>
+                <p>
+                    If you do not wish to receive our Newsletter anymore,
+                    you can unsubscribe at any moment by clicking on the Unsubscribe link at the bottom of every Newsletter.
+                    This will open a webpage where you can confirm that you want to unsubscribe.
+                    We ask you to consider that you may still receive several more communications before your request is fulfilled ; we apologize for the inconvenience.
+                </p>
+            </div>
+        </article>
+        <article class="returnsContainer reposPanel" id="returnsPanel">
+            <h3 id ="RRE">RETURNS, REFUNDS, EXCHANGES</h3>
+            <div>
+                <h4>RETURN POLICY</h4>
+                <p>RETURNS POLICY FOR ONLINE PURCHASES:</p>
+                <p>If your item is eligible for return (our return policy), you have 30 days from the date you received your order to follow the below steps:</p>
+                <p>Return period will be extended to 45 days for orders placed and delivered between 26TH Nov and 26th Dec 2021</p>
+                <p>
+                    Register your return online by logging in to your account.
+                    Ensure that your items are returned in their original condition and in their original packaging. All labels must be retained and attached to the items.
+                    Replace the initial delivery label with the pre-paid return label included in your parcel and carefully seal your parcel.
+                    Contact Fedex to organise the pick-up for your return, or drop it off at a Fedex collection point.
+                    Returns must be sent from the same country as the country of receipt.
+                    Please allow around 5 to 7 days to receive your refund, following receipt of the parcel by
+                    our services (this time frame is for guidance only and may vary depending on periods of activity).
+                    If your return does not meet the above-mentioned conditions, we will send it back to you.
+                    Once your return has been accepted, you will be refunded and will receive an email confirming this.
+                    For orders placed with Pre Paid Cards, kindly note that Balenciaga has no control over your refund, pending charge,
+                    and payment processing times and these financial institutions reserve the right to process these reversals at their discretion.
+                    Balenciaga is unable to expedite this process. Please contact your Pre Paid Card issuer for further information and assistance.
+                </p>
+                <p>For further information about the conditions of our returns policy, please click here.</p>
+                <p>
+                    All returns shipped using the pre-paid shipping label are complimentary. Please note, Balenciaga is not liable for merchandise
+                    returned through an alternative courier service, we recommend using the prepaid label.
+                </p>
+                <p>
+                    You can also return items purchased on Balenciaga.com to one of our stores, within 30 days, by following the steps below:
+                    Ensure that your items are returned in their original condition and in their original packaging.
+                    - Place the items in their original packaging and return them to one of our stores, along with the proof of purchase and the pre-printed
+                    returns label present in the original parcel.
+                    Returns can only be processed in the country in which the parcel was delivered. Stores located in other countries are not authorized to accept returns.
+                </p>
+                <p>If returning your online order to a store, please do not complete return form online as it can cause delays in processing.</p>
+                <p>
+                    The right of withdrawal/exchange does not apply to orders for products which cannot be sent back given their nature
+                    (e.g. unsealed fragrance or cosmetics products), or for hygiene reasons (such as masks, underwear, bathing suits, swim trunks). 
+                </p>
+            </div>
+            <div>
+                <h4>WHERE CAN I CHECK MY RETURN STATUS</h4>
+                <p>You can check your return status at any time in My Account.</p>
+            </div>
+            <div>
+                <h4>EXCHANGES</h4>
+                <p>
+                    EXCHANGE POLICY FOR ITEMS BOUGHT ONLINE :
+                    For exchange inquiries, please contact our Client Service.
+                </p>
+                <p>
+                    EXCHANGE POLICY FOR ITEMS BOUGHT IN-STORE :
+                    Balenciaga accepts in-store exchanges for items purchased within 30 days of for both US and International Balenciaga Retail Stores.
+                    Refunds are not available for any In Store Purchase.
+                </p>
+                <p>
+                    The returned item will be accepted under the following conditions:
+                    - Proof of purchase or gift receipt required
+                    - Item in original condition, with all the original labels and packaging for shoes and jewelry.                                                
+                     - Full Price Merchandise
+                    </p>
+                <p>
+                    Returns not accepted for fragrances, promotional items, personal care items, press samples and gifts and items from private sales.
+                    CITES products can be exchanged within same country only, no International exchange.
+                </p>
+                <p>
+                    Returns for Exchange are not accepted:
+                    - In Outlet Store Locations
+                    - In Balenciaga Wholesale Partners such as Department Stores or 3rd Party Boutique locations.
+                </p>
+                <p>Purchases made outside China cannot be exchanged in China.</p>
+                <p>All Sale Merchandise is a Final Sale.</p>
+                <p
+                >The right of withdrawal/exchange does not apply to orders for products which cannot be sent back given their nature
+                    (e.g. unsealed fragrance or cosmetics products), or for hygiene reasons (such as underwear, bathing suits, swim trunks, earrings and pierced jewelry).
+                </p>
+            </div>
+            <div>
+                <h4>I LOST MY RETURN LABEL. HOW CAN I GET A NEW ONE ?</h4>
+                <p>If you have lost the pre-paid return label, please contact us. We will be pleased to help you. </p>
+            </div>
+            <div>
+                <h4>CAN I RECEIVE MY REFUND ON A CREDIT CARD THAT IS DIFFERENT FROM THE ONE I USED FOR THE ORDER ?</h4>
+                <p>For security reasons, we cannot refund a credit card that is different from the one used for the purchase.</p>
+            </div>
+        </article>
+    </section>
+    
+    <footer>
+        <div>
+            <form>
+                <div class="newsLetter">
+                    <fieldset>
+                        <h3>NEWSLETTER</h3>
+                        <input type="email" id="userEmail" placeholder="Your email address">
+                    </fieldset>
+                    <ul>
+                        <li>
+                            <label for="selectByTitle">TITLE</label>
+                            <span class="selectBox titleBox">
+                                <select id="selectByTitle">
+                                    <option value="chk_1">Mrs</option>
+                                    <option value="chk_2">Miss</option>
+                                    <option value="chk_3">Mr</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <input type="text" title="LastName" placeholder="LastName">
+                            <input type="text" title="FirstName" placeholder="FirstName">
+                        </li>
+                        <li>
+                            <p>I wish to be contacted by email to receive
+                                Balenciaga newsletters, personalized
+                                information on Balenciaga products and
+                                services, invitations to events and marketing
+                                surveys in relation</p> 
+                            <div>
+                                <input type="submit" value="Confirm">
+                                <input type="reset" value="Cancel">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <h3>BOUTIQUES</h3>
+            <ul>
+                <li>
+                    <a href="">Fine a store nearby</a>
+                </li>
+            </ul>
+            <p>
+                ⓒBalenciaga
+            </p>
+        </div>
+        <div>
+            <h3>CLIENT SERVICES</h3>
+            <ul>
+                <li>
+                    <a href="CLIENTSERVICE.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Track Order</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Returns</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Delivery</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Payment</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>THE COMPANY</h3>
+            <ul>
+                <li>
+                    <a href="ABOUT.html">Careers-Design</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Costomer Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Legal Notice</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>CONNECT</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Balenciaga" target="_blank">FaceBook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BALENCIAGA" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/Balenciaga/" target="_blank">Instargram</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

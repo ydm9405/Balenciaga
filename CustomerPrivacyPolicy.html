@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomerPrivacyPolicy</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <!--aside의 ul li a(ex:COOKIE POLICY)클릭시 div의 클래스가 CookieContainer로 이동하는 구조-->
+</head>
+<body>
+    <header>
+        <div class="logorab">
+            <h1>
+                <a href="index.html"><img src="images/logo.svg" alt="balenciaga"></a>
+            </h1>
+            <div class="subrab">
+                <form>
+                    <fieldset>
+                        <input type="text" id="searchText" placeholder="What art you looking for?">
+                        <input type="submit" value="search">
+                    </fieldset>
+                </form>
+                <a href="Account.html" class="material-icons">person_outline</a>
+                <input type="button" value="cart" data-panelName="cartSidePanel">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>READY TO WEAR
+                    <ul>
+                        <li><a href="CoatsNJackets.html">Coats&amp;Jackets</a></li>
+                        <li><a href="Pants.html">Pants</a></li>
+                        <li><a href="SweatshirtsNHoodies.html">Sweatshirts&Hoodies</a></li>
+                        <li><a href="T-Shirts.html">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>SHOES
+                    <ul>
+                        <li><a href="BootsNDerbies.html">Boots&amp;Derbies</a></li>
+                        <li><a href="Crocs.html">Crocs</a></li>
+                        <li><a href="Sneakers.html">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li>LEATHER GOODS
+                    <ul>
+                        <li><a href="Backpacks.html">Backpacks</a></li>
+                        <li><a href="BagsNTotes.html">Bags&amp;Totes</a></li>
+                    </ul>
+                </li>
+                <li>SMALL GOODS
+                    <ul>
+                        <li><a href="CardHolders.html">CardHolders</a></li>
+                        <li><a href="Wallets.html">Wallets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside id="cartSidePanelEmpty">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <p>You do not have any products in your basket</p>
+            <input type="button" value="CONTINUE SHOPPING">
+        </aside>
+        
+        <aside id="cartSidePanel">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <ul>
+                <li>
+                    <img src="images/Coats&jackets_01.jpg" alt="OversizeTrench">
+                    <dl>
+                        <dt>Oversized Trench</dt>
+                        <dd>size:<span>xxs</span></dd>
+                        <dd><strong>$3,350</strong></dd>
+                        <dd><input type="button" value="Remove"></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="total">
+                Total : <strong>$3,350</strong>
+            </div>
+            <a href="payment.html">PROCEED TO CHECKOUT</a>
+        </aside>
+    </header>
+
+    <section class="policyContainer">
+        <h2>POLICY</h2>
+        <aside>
+            <h3>CATEGORIES</h3>
+            <ul>
+                <li><a href="#" data-tabName="CookieContainer" class="active">COOKIE POLICY</a></li>
+                <li><a href="#" data-tabName="PrivacyContainer">PRIVACY POLICY</a></li>
+                <li><a href="#" data-tabName="ReturnContainer">RETURN POLICY</a></li>
+                <li><a href="#" data-tabName="SaleContainer">TERMS AND CONDITION OF SALE</a></li>
+                <li><a href="#" data-tabName="UseContainer">TERMS AND CONDITION OF USE</a></li>
+                <li><a href="#" data-tabName="LegalNoticeContainer">LEGAL NOTICE</a></li>
+            </ul>
+        </aside>
+        <div id="CookieContainer" class="policyPanel active">
+            <h3 id="Cookie">COOKIE POLICY</h3>
+            <p>
+                DO WE USE COOKIES OR OTHER ONLINE ADVERTISING TECHNOLOGIES?
+            </p>
+            <p>
+                We use cookies to personalise content and ads, to provide social media features and to analyse our traffic data.
+                We also share information on your use of our site with our social media, advertising and analytics partners.
+                You can read more about any of our purposes or the vendors that we use by clicking on "Cookie Settings".
+                This preference centre is accessible at any time through the "Cookie Settings" button located on every page.</p>
+            <p>
+                When you visit any website, it may store or retrieve information using your browser, mostly in the form of cookies.
+                This information might be personal information about you, your preferences or your device and is mostly used to make the site work
+                as you expect it to. The information does not usually directly identify you, but it can give you a more personalised web experience.
+                Because we respect your right to privacy, you can choose not to allow some types of cookies.
+            </p>
+        </div>
+        <div id="PrivacyContainer" class="policyPanel">
+            <h3 id="Privacy">PRIVACY POLICY</h3>
+            <p>
+                CUSTOMER PRIVACY POLICY
+                FOR THE PHYSICAL AND DIGITAL WORLDS
+                EFFECTIVE DATE: MAY 2021
+            </p>
+            <p>1. WHAT IS COVERED BY THIS PRIVACY POLICY AND DO OTHER POLICIES APPLY TO YOU?</p>
+            <p>2. WHO COLLECTS & USES YOUR PERSONAL INFORMATION?</p>
+            <p>3. WHY DO WE COLLECT YOUR PERSONAL INFORMATION?</p>
+            <p>4. WHAT PERSONAL INFORMATION DO WE COLLECT?</p>
+            <p>5. WHEN DO WE COLLECT YOUR PERSONAL INFORMATION?</p>
+            <p>6. HOW DO WE COLLECT YOUR PERSONAL INFORMATION?</p>
+            <p>7. WHO ARE OUR THIRD-PARTY SOURCES?</p>
+            <p>8. SHOULD YOU ALWAYS SHARE YOUR PERSONAL INFORMATION WITH US?</p>
+            <p>9. FOR HOW LONG DO WE KEEP YOUR PERSONAL INFORMATION?</p>
+            <p>10. HOW DO WE PROTECT YOUR PERSONAL INFORMATION?</p>
+            <p>11. WHERE DO WE STORE YOUR PERSONAL INFORMATION?</p>
+            <p>12. DO WE SELL YOUR PERSONAL INFORMATION?</p>
+            <p>13. WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</p>
+            <p>14. HOW DO WE ADDRESS THE PRIVACY OF CHILDREN?</p>
+            <p>15. WHAT ARE YOUR RIGHTS REGARDING YOUR PERSONAL INFORMATION?</p>
+            <p>16. CAN THE PRIVACY POLICY CHANGE?</p>
+            <p>17. DO WE USE COOKIES OR OTHER ONLINE ADVERTISING TECHNOLOGIES?</p>
+            <p>18. HOW CAN YOU CONTACT US?</p>
+        </div>
+        <div id="ReturnContainer" class="policyPanel">
+            <h3 id="Return">RETURN POLICY</h3>
+            <p>BALENCIAGA – UNITED STATES</p>
+            <p>
+                1. RETURN / EXCHANGE CONDITIONS
+                BALENCIAGA (“We”, “us”, “ our”) accepts returns or exchanges of BALENCIAGA products (“Products”)
+                eligible to return (as defined in BALENCIAGA General Terms and Conditions of Sales) within 30 calendar days of receipt of the Products.
+            </p>
+            <p>
+                The right of withdrawal does not apply to orders for personalized Products and for any other Product
+                that you was informed at the time of submitting your order that it could not be returned (in accordance with applicable law)
+                (“Non-returnable Products”).
+            </p>
+            <p>
+                We only allow exchanges on the same Product (same price) in a different size/color.
+                If you would like to receive a different Product or the same Product in a different color instead, please return your Product for a refund.
+                Then place a new order online for the Product you would like.
+            </p>
+            <p>
+                Products shall be returned in their original condition, unaltered, unused and undamaged, in their original package, if any,
+                and with original tags and labels attached along with all related accessories, documents (e.g. instructions booklet, Product certificates)
+                and protective covers included.
+            </p>
+            <p>Returns or exchanges of incomplete, altered, worn, damaged, soiled Products will not be accepted and will be returned to you.</p>
+            <p>The above does not affect your legal rights in relation to Products that have manufacturing defects or are not as described.</p>
+            <p>
+                2. RETURN / EXCHANGE PROCESS
+                To return a Product, you must inform us of your intention to return or exchange a Product. To this effect you may:
+            </p>
+            <p>
+                - connect to https://www.balenciaga.com/us/, log in to your account, go your Order History and complete the online return form
+                by selecting the Product(s) you would like to return and indicating the quantity and reason for return;
+            </p>
+            <p>or</p>
+            <p>- contact our Client Service for assistance at +1 646 889 1895 or send an email to clientservice.us@balenciaga.com.</p>
+            <p>To exchange a Product, you may contact our Client Service at +1 646 889 1895 or clientservice.us@balenciaga.com.</p>
+            <p>
+                You will receive an email confirming your return or exchange request. Please follow the instructions below to return the product(s)
+                to our warehouse or to the nearest store:
+            </p>
+            <p>
+                - Wrap the Products you wish to return or exchange safely to avoid damage; Place them in their original package, if any,
+                and then inside the shipping box in which you received your order;
+            </p>
+            <p>
+                - Attach the return prepaid shipping label included in the shipping box to the outside of the box, on top of the original label,
+                and seal the box securely; If you have lost the label, please contact our Client Service for assistance;
+            </p>
+            <p>
+                - Visit the carrier website or contact the Client Service to arrange for collection. Alternatively, you may drop the box to
+                the nearest carrier drop-off location;
+            </p>
+            <p>or</p>
+            <p>- Return the Product(s) purchased online from the Australian website to any BALENCIAGA store in Australia (except Department Stores).</p>
+            <p>Please note that Products must be returned within 14 calendar days from your request for return or exchange.</p>
+            <p>
+                3. REFUNDS - EXCHANGES
+                Upon receipt of a Product for which a return or exchange was requested, we will inspect the Product to ensure
+                that the return / exchange conditions specified above in Article 1 are met. Subject to the Product meeting those conditions,
+                an exchange or refund will be made.
+            </p>
+            <p>
+                Refunds will be made to the original purchaser, in the original method of payment and in the same currency as purchase
+                except in case of payment by cash on delivery where refunds will be made by bank transfer.
+            </p>
+            <p>
+                Refunds will occur no later than 14 days from the date we received back from you the Products, or you have provided evidence
+                that you have returned them, whichever is the earliest. A confirmation email will be sent to you.
+            </p>
+        </div>
+        <div id="SaleContainer" class="policyPanel">
+            <h3 id="Sale">TERMS AND CONDITION OF SALE</h3>
+            <p>
+                1. GENERAL PROVISIONS
+                1.1. These general terms and conditions of sale (“General Terms”) describe the terms on which BALENCIAGA AMERICA INC.
+                a New York DEL CORP – Delaware Corporation with its principal place of business located at 65 Bleecker Street 3rd Floor 10012
+                New York United States (“BALENCIAGA”, “we”, “us”, “our”), sells, and a consumer (“you”) purchases, BALENCIAGA products (“Products”)
+                through the website https://www.balenciaga.com/us/ (“Website”).
+            </p>
+            <p>1.2. These General Terms will apply to any contract for the sale of Products by BALENCIAGA to you through the Website (“Contract”).</p>
+            <p>
+                1.3. The sale of Products under these General Terms is only available to consumers, meaning natural persons who act for purposes of
+                personal consumption (i.e. for purposes extraneous to their trade, business, craft and profession and not for profit),
+                who have reached the age of majority and have full legal capacity to enter into a Contract, in their country.
+            </p>
+            <p>
+                1.4. You will be asked to agree to these General Terms and to the Terms of Use of the Website (“ToU”) before placing an order.
+                We therefore advise you to read these documents carefully, and in particular these General Terms,
+                before proceeding with any purchase, and save or print a copy for future reference. If you do not agree to these General Terms,
+                the ToU, and our Privacy Policy, you will not be able to order any Products from the Website.
+            </p>
+            <p>
+                1.5. We reserve the right to amend or update all or part of these General Terms from time to time, without notice.
+                Any amendments or updates we make to these General Terms will apply to any future orders you place with us when ordering Products.
+                We will always post the most current version of these General Terms on the Website and display the ”Last Updated”
+                date to reflect the date of the changes.
+            </p>
+            <p>
+                1.6. These General Terms should be read alongside, and are in addition to, our Privacy Policy at
+                https://www.balenciaga.com/en-us/legal-notices/privacy-policy/privacy-policy.html which tells you how we use your personal data,
+                and our Cookie Policy at https://www.balenciaga.com/en-us/legal-notices/cookie-policy/cookie-policy.html.
+            </p>
+            <p>
+                2. PRODUCTS INFORMATION AND AVAILABILITY
+                2.1. Information on our Products (along with the corresponding Product codes) and relevant prices are available on the Website.
+            </p>
+            <p>
+                2.2. The Products available on the Website are usually a selection of items normally available in stores.
+                However certain Products may be available exclusively online through the Website, and others may not be available, or legally sold,
+                online. Also, some Products may not be shipped to your country.
+            </p>
+            <p>
+                2.3. Pictures of the Products displayed on the Website are for illustrative purposes only.
+                Although we have made every effort to display the Products accurately,
+                we cannot guarantee that a device’s display of our Products accurately reflects them. In particular, the colors, fabric, shade, grain,
+                texture of the Products shown on your screen may vary from those on the actual Product.
+                Therefore, you should rely exclusively on the description of the Products and their characteristics as mentioned on the Website.
+            </p>
+            <p>
+                2.4. We reserve the right, in our sole discretion, to limit the quantities and/or types of any Products available on the Website per person,
+                household or per order. These restrictions may include orders placed by or under the same account,
+                the same payment method and/or orders that use the same billing and/or shipping address.
+                You cannot purchase more than two (2) identical Products per order. The maximum number of items per order is ten (10).
+            </p>
+            <p>
+                2.5. We may change or discontinue a Product or any of its features, as described on the Website, at any time without
+                notice (this does not affect orders already placed at the time of the change). During the purchasing process,
+                we will inform you if your order cannot be processed due to the unavailability of the ordered Products.
+            </p>
+            <p>
+                2.6. In the event your connection to the Website fails, your selection of Products may be lost.
+                In such case you will be required to re-enter your selection. Please note that Products in your shopping cart are not reserved and
+                may be purchased by other customers. In no event we shall be liable to you for the unavailability of a Product following a failure or
+                loss of your connection to the Website.
+            </p>
+            <p>
+                3. PRICES
+                3.1. Prices of Products are indicated on the Website in Euro and are inclusive of any applicable VAT, sales taxes or other taxes.
+                Prices do not include delivery charges, which, if any, shall be added to the price of the Products and will be communicated
+                to you during the checkout process before you confirm your order.
+            </p>
+            <p>
+                3.2. We make all reasonable efforts to ensure that all prices for the Products displayed on the Website are correct.
+                Occasionally, however, an error may occur, and Products may be mispriced (incorrect price or typographical error in the price shown).
+                In this case we will, at our discretion,
+                (i) cancel the order or terminate the Contract (depending on when the error is detected)
+                and notify you of such cancellation or termination, or
+                (ii) contact you and ask you whether you wish to purchase the Product at the correct price.
+            </p>
+            <p>
+                3.3. We reserve the right to change the Products prices at any time and without notice,
+                but such changes will not apply to Products for which you have received an Order Acceptance.
+            </p>
+            <p>
+                4. FORMATION OF THE CONTRACT – PLACING AN ORDER
+                4.1. The information about the Products and their prices that is displayed on the Website does not represent an offer by us.
+            </p>
+            <p>
+                4.2. To purchase Products on the Website, you must follow the instructions provided by the online purchase process:
+                (i) include the selected Products (subject to the restrictions set forth in Section 2.4) in the shopping cart,
+                (ii) fill in the order form with your personal information (name, address, email, telephone, shipping/billing address),
+                (iii) select your payment method,
+                (iv) accept these General Terms,
+                (v) accept the ToU and
+                (vi) place your order through the Website (following the relevant instructions on screen).
+            </p>
+            <p>4.3. Before submitting your order, you will be given the opportunity to review your selection, check the total price and correct any errors.</p>
+            <p>
+                4.4. Your order constitutes an offer to purchase from us the selected Products, under these General Terms. By placing an order,
+                you agree to pay the price of the ordered Products.
+            </p>
+            <p>
+                4.5. All orders submitted by you are subject to our acceptance. Once you place your order,
+                we will acknowledge it by email (“ Order Confirmation”). This Order Confirmation does not, however,
+                mean that your order has been accepted. We may choose not to accept your order, in whole or in part, without liability to you.
+                Examples of non-acceptance of your orders are as follows:
+                (i) The Products are not available; or
+                (ii) You do not comply with the eligibility conditions set out in Section 1.3; or
+                (iii) You have ordered too many Products (see Section 2.4); or
+                (iv) We are unable to obtain authorization for your payment; or
+                (v) There is an error in the price displayed; or
+                (vi) Reported or suspected, fraudulent, illegal or unauthorized activities, including suspected purchases for commercial purposes; or
+                (vii) The delivery address provided by you is not a valid address; or
+                (viii) You have not fulfilled your obligations deriving from a prior contract entered into with us.
+            </p>
+            <p>
+                4.6. The Contract between us and you will only be formed when you receive from us an email notification confirming shipment of
+                your order (" Order Acceptance"). The Order Acceptance (or rejection) shall be sent to the email address provided by you in the order.
+                The details of your accepted orders are available under “My Account - My Order” section of the Website.
+            </p>
+            <p>
+                4.7. In case of unavailability of one or more ordered Products, we will contact you and inform you of such unavailability.
+                The order will be partially cancelled and you shall pay only the price of the available Product(s).
+            </p>
+            <p>
+                4.8. The Order Confirmation/Acceptance will include notably the order number, basic information on the purchased Products,
+                confirmation of the price and the shipping address.
+            </p>
+            <p>
+                4.9. Once you receive the Order Acceptance you can no longer cancel or
+                modify your order unless otherwise provided in these General Terms.
+                Dispatched Products can however be returned as set out in Article 8 below.
+            </p>
+            <p>
+                4.10. From time to time we may invite you to pre-order certain selected Products on the Website
+                before they are available to purchase from the stores or the Website (“Pre-Order Products”).
+                The thirty (30) days delivery term set out in Section­ 6.4 will not apply to Pre-Order Products.
+                An estimated delivery date for the Pre-Order Products will be communicated to you when we confirm your order.
+            </p>
+        </div>
+        <div id="UseContainer" class="policyPanel">
+            <h3 id="Use">TERMS AND CONDITION OF USE</h3>
+            <p>Terms of Use of the Website </p>
+            <p>Date: September 2021</p>
+            <p>Welcome to www.balenciaga.com/us/ (”Website”). </p>
+            <p>
+                The Website is owned and operated by Balenciaga, a company incorporated under the laws of France with a share capital
+                of 23.271.525 €, registered with the Paris Trade and Corporate Register under unique identification number 775 668 122,
+                with registered office at 40, rue de Sèvres 75007 Paris.
+            </p>
+            <p>PLEASE READ THE FOLLOWING TERMS OF USE OF THE WEBSITE (the “ToU”) CAREFULLY BEFORE USING THE WEBSITE.</p>
+            <p>These ToU applies to your access to, and use of, the Website, and the services available through the Website (“Services”).</p>
+            <p>
+                When accessing the Website and using the Services for the first time, you will be asked to agree to these ToU.
+                If you do not agree to be bound by these ToU, you must cease using the Website or the Services .
+            </p>
+            <p>
+                We reserve the right to amend or update all or part of these ToU from time to time at our discretion.
+                We will always post the most current version of these ToU on the Website and display the “Last Updated” date
+                to reflect the date of the changes. Please consult these ToU from time to time to take notice of any changes we made,
+                as they are binding to you.
+            </p>
+            <p>
+                Please note that, when visiting the Website for the first time after changes to the ToU have been uploaded,
+                you will be asked to agree to the updated ToU. If you do not agree with the revised ToU, please stop using the Website.
+            </p>
+            <p>1. Accessing the Website, Registration and Subscription to the Services</p>
+            <p>
+                1.1. You are responsible for making all the necessary arrangements for you to have access to the Website.
+                You may set-up an account or subscribe on the Website to our Services as available from time to time,
+                using an email address and password (“Account Details”). You are responsible for maintaining the confidentiality
+                and security of your Account Details and accept sole risk for all activities that occur under them (including the activities
+                of persons who access our Website using your Account Details). You agree to notify us if you become aware of,
+                or suspect, any unauthorized use of your Account Details. Any information and details provided by you to us must be accurate,
+                true and up to date in all respects and at all times.
+            </p>
+            <p>
+                1.2. The Services are generally not intended for persons under the age of majority in your country or for adults under guardianship.
+                If you are under this age, please do not use the Website or register for, or subscribe to, the Services.
+                If we learn that you are under this age (or fraudulently misrepresented your age during the registration or subscription process),
+                we will promptly cancel your registration, or subscription, if any, and stop providing you with the Services.
+                We advise parents or guardians of minors or guardians of adults under guardianship using the Website that is important that
+                they communicate with such minors or adults under guardianship, as applicable, about their safety online and potential risks on them.
+            </p>
+            <p>2. Privacy and Cookie Policies</p>
+            <p>
+                2.1 Our Privacy Policy governs the use and processing of the personal data we collect from, or provided by, you through the Website.
+                Before uploading or providing any personal data to the Website, please read carefully our Privacy Policy
+                https://www.balenciaga.com/en-us/legal-notices/privacy-policy/privacy-policy.html .
+            </p>
+            <p>
+                2.2 The Website uses cookies to monitor browsing preferences. If you have allowed cookies to be used, please consult our Cookie Policy
+                https://www.balenciaga.com/en-us/legal-notices/cookie-policy/cookie-policy.html to find out the type of personal
+                data that may be processed by us.
+            </p>
+            <p>3. Use of the Website</p>
+            <p>3.1 You agree that in using the Website, you will not:</p>
+            <p>a. provide false or otherwise misleading information or impersonate another person;</p>
+            <p>b. use anyone else’s account without the permission of the account holder;</p>
+            <p>
+                c. use the Website in any way that interrupts, causes or may cause damage to the Website, impairs the Website’s
+                availability or accessibility or renders the Website less efficient;
+            </p>
+            <p>
+                d. circumvent or attempt to circumvent the Website’s security measures and tamper with the technology that forms part of the Website;
+            </p>
+            <p>
+                e. obtain or attempt to obtain any information, materials or documents not purposely made available through the Website through
+                any means (such as personal data, financial or other confidential or sensitive information);
+            </p>
+            <p>f. breach any applicable law;</p>
+            <p>g. use the Website for any unlawful purpose or in a way which infringes the rights of any third parties;</p>
+            <p>h. upload, post or otherwise transmit via the Website any content that:</p>
+            <p>
+                (i) is misleading, harmful, threatening, abusive, harassing, defamatory, offensive, violent, obscene, pornographic, vulgar, libellous,
+                racially, ethnically, religiously or otherwise inappropriate;
+            </p>
+            <p>(ii) constitutes unauthorized disclosure of personal data or confidential information;</p>
+            <p>(iii) infringes the intellectual property rights of any party;</p>
+            <p>(iv) contains viruses or other form of malware.</p>
+            <p>
+                3.2 We reserve the right to cancel your registration or subscription, and/or block your account and/or deny, restrict, suspend,
+                or terminate your access to the Website and to the Services at any time, without notice and without liability to you,
+                if your use of the Website is in breach of any of your obligations under these ToU, or any other provisions of these ToU,
+                without prejudice to any other remedies available to us under applicable law and under these ToU.
+            </p>
+        </div>
+        <div id="LegalNoticeContainer" class="policyPanel">
+            <h3 id="LegalNotice">LEGAL NOTICE</h3>
+            <p>Welcome to www.balenciaga.com (the “Website”).</p>
+            <p>
+                The Website is owned and operated by Balenciaga, a company incorporated under the laws of France with a share capital
+                of 23.271.525 €, registered with the Paris Trade and Corporate Register under unique identification number 775 668 122,
+                with registered office at 40, rue de Sèvres 75007 Paris.
+            </p>
+            <p>The Website’s publishing director is Mr. Cédric Charbit.</p>
+            <p>
+                The Website is hosted by Salesforce.com EMEA Private Limited Company (Ltd) (Village 9, Floor 26 Salesforce Tower; 110 Bishopsgate,
+                London, UK EC2N 4AY – +44(0)203 1477600).
+            </p>
+            <p>You can contact us in one of the following ways:</p>
+            <p>- By telephone at +44 20 33 18 60 32</p>
+            <p>- By email at clientservice.en.emea@balenciaga.com</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div>
+            <form>
+                <div class="newsLetter">
+                    <fieldset>
+                        <h3>NEWSLETTER</h3>
+                        <input type="email" id="userEmail" placeholder="Your email address">
+                    </fieldset>
+                    <ul>
+                        <li>
+                            <label for="selectByTitle">TITLE</label>
+                            <span class="selectBox titleBox">
+                                <select id="selectByTitle">
+                                    <option value="chk_1">Mrs</option>
+                                    <option value="chk_2">Miss</option>
+                                    <option value="chk_3">Mr</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <input type="text" title="LastName" placeholder="LastName">
+                            <input type="text" title="FirstName" placeholder="FirstName">
+                        </li>
+                        <li>
+                            <p>I wish to be contacted by email to receive
+                                Balenciaga newsletters, personalized
+                                information on Balenciaga products and
+                                services, invitations to events and marketing
+                                surveys in relation</p> 
+                            <div>
+                                <input type="submit" value="Confirm">
+                                <input type="reset" value="Cancel">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <h3>BOUTIQUES</h3>
+            <ul>
+                <li>
+                    <a href="">Fine a store nearby</a>
+                </li>
+            </ul>
+            <p>
+                ⓒBalenciaga
+            </p>
+        </div>
+        <div>
+            <h3>CLIENT SERVICES</h3>
+            <ul>
+                <li>
+                    <a href="CLIENTSERVICE.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Track Order</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Returns</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Delivery</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Payment</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>THE COMPANY</h3>
+            <ul>
+                <li>
+                    <a href="ABOUT.html">Careers-Design</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Costomer Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Legal Notice</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>CONNECT</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Balenciaga" target="_blank">FaceBook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BALENCIAGA" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/Balenciaga/" target="_blank">Instargram</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

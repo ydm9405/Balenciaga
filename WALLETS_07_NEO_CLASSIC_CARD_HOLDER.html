@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO CLASSIC CARD HOLDER</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="logorab">
+            <h1>
+                <a href="index.html"><img src="images/logo.svg" alt="balenciaga"></a>
+            </h1>
+            <div class="subrab">
+                <form>
+                    <fieldset>
+                        <input type="text" id="searchText" placeholder="What art you looking for?">
+                        <input type="submit" value="search">
+                    </fieldset>
+                </form>
+                <a href="Account.html" class="material-icons">person_outline</a>
+                <input type="button" value="cart" data-panelName="cartSidePanel">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>READY TO WEAR
+                    <ul>
+                        <li><a href="CoatsNJackets.html">Coats&amp;Jackets</a></li>
+                        <li><a href="Pants.html">Pants</a></li>
+                        <li><a href="SweatshirtsNHoodies.html">Sweatshirts&Hoodies</a></li>
+                        <li><a href="T-Shirts.html">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>SHOES
+                    <ul>
+                        <li><a href="BootsNDerbies.html">Boots&amp;Derbies</a></li>
+                        <li><a href="Crocs.html">Crocs</a></li>
+                        <li><a href="Sneakers.html">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li>LEATHER GOODS
+                    <ul>
+                        <li><a href="Backpacks.html">Backpacks</a></li>
+                        <li><a href="BagsNTotes.html">Bags&amp;Totes</a></li>
+                    </ul>
+                </li>
+                <li>SMALL GOODS
+                    <ul>
+                        <li><a href="CardHolders.html">CardHolders</a></li>
+                        <li><a href="Wallets.html">Wallets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside id="cartSidePanelEmpty">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <p>You do not have any products in your basket</p>
+            <input type="button" value="CONTINUE SHOPPING">
+        </aside>
+        
+        <aside id="cartSidePanel">
+            <input type="button" value="cancel" class="btn_close">
+            <h2>BASKET</h2>
+            <ul>
+                <li>
+                    <img src="images/Coats&jackets_01.jpg" alt="OversizeTrench">
+                    <dl>
+                        <dt>Oversized Trench</dt>
+                        <dd>size:<span>xxs</span></dd>
+                        <dd><strong>$3,350</strong></dd>
+                        <dd><input type="button" value="Remove"></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="total">
+                Total : <strong>$3,350</strong>
+            </div>
+            <a href="payment.html">PROCEED TO CHECKOUT</a>
+        </aside>
+    </header>
+
+    <section class="detailContainer">
+        <h2>CardHolders</h2>
+        <div class="Product img">
+            <img src="images/Wallets_07.jpg" alt="NEO CLASSIC CARD HOLDER">
+            <img src="images/Wallets_07B.jpg" alt="NEO CLASSIC CARD HOLDER_Back">
+        </div>
+        <div class="Product detail">
+            <h3>NEO CLASSIC CARD HOLDER</h3>
+            <span class="selectBox yoursize">
+                <label for="selectBysize">Select your size</label>
+                <select id="selectBysize" title="select ur size">
+                    <option value="selectFalse">Select your size</option>
+                    <option value="chk_1">FREE</option>
+                </select>
+            </span>
+            <strong>$250</strong>
+            <input type="button" value="ADD TO CART" class="btn_black callB">
+            <article>
+                <h3>PRODUCT DETAIL</h3>
+                <ul>
+                    <li>Dimensions : L2,9 x H3,9 x W0,4 inch</li>
+                    <li>Grained calfskin</li>
+                    <li>Tone-on-tone Balenciaga embossing</li>
+                    <li>4 cards slots</li>
+                    <li>1 bill compartment</li>
+                    <li>Made in Italy</li>
+                    <li>Wipe with a soft cloth</li>
+                </ul>
+                <span>Material: 100% calfskin</span>
+                <span>Product ID: 64010915Y0I1000</span>
+            </article>
+        </div>
+    </section>
+    
+    <footer>
+        <div>
+            <form>
+                <div class="newsLetter">
+                    <fieldset>
+                        <h3>NEWSLETTER</h3>
+                        <input type="email" id="userEmail" placeholder="Your email address">
+                    </fieldset>
+                    <ul>
+                        <li>
+                            <label for="selectByTitle">TITLE</label>
+                            <span class="selectBox titleBox">
+                                <select id="selectByTitle">
+                                    <option value="chk_1">Mrs</option>
+                                    <option value="chk_2">Miss</option>
+                                    <option value="chk_3">Mr</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <input type="text" title="LastName" placeholder="LastName">
+                            <input type="text" title="FirstName" placeholder="FirstName">
+                        </li>
+                        <li>
+                            <p>I wish to be contacted by email to receive
+                                Balenciaga newsletters, personalized
+                                information on Balenciaga products and
+                                services, invitations to events and marketing
+                                surveys in relation</p> 
+                            <div>
+                                <input type="submit" value="Confirm">
+                                <input type="reset" value="Cancel">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <h3>BOUTIQUES</h3>
+            <ul>
+                <li>
+                    <a href="">Fine a store nearby</a>
+                </li>
+            </ul>
+            <p>
+                ⓒBalenciaga
+            </p>
+        </div>
+        <div>
+            <h3>CLIENT SERVICES</h3>
+            <ul>
+                <li>
+                    <a href="CLIENTSERVICE.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Track Order</a>
+                </li>
+                <li>
+                    <a href="TrackOrderNReturns.html">Returns</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Delivery</a>
+                </li>
+                <li>
+                    <a href="CLIENTSERVICE.html">Payment</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>THE COMPANY</h3>
+            <ul>
+                <li>
+                    <a href="ABOUT.html">Careers-Design</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Costomer Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="CustomerPrivacyPolicy.html">Legal Notice</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>CONNECT</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Balenciaga" target="_blank">FaceBook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BALENCIAGA" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/Balenciaga/" target="_blank">Instargram</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

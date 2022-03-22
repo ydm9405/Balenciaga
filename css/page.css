@@ -8394,19 +8394,19 @@
         line-height: 30px;
     }
     section.coatsNJacketsList ul li:nth-child(1) {
-        background-image: url('images/Coats&jackets_01.jpg');
+        background-image: url('../images/Coats&jackets_01.jpg');
         background-size: 500px 500px;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
     }
     section.coatsNJacketsList ul li:nth-child(1):hover {
-        background-image: url('images/Coats&jackets_01B.jpg');
+        background-image: url('../images/Coats&jackets_01B.jpg');
     }
     section.coatsNJacketsList ul li:nth-child(1) input[type='button'] {
         background-color: transparent;
         border: none;
-        background-image: url('images/cart.png');
+        background-image: url('../images/cart.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 25px;
